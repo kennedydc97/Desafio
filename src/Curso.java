@@ -40,8 +40,6 @@ public class Curso {
         listaDeAlunos.remove(umAluno);
     }
 
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -49,6 +47,15 @@ public class Curso {
         Curso curso = (Curso) o;
         return codCurso == curso.codCurso;
     }
+
+
+    //    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Curso curso = (Curso) o;
+//        return codCurso == curso.codCurso;
+//    }
 
     @Override
     public int hashCode() {
